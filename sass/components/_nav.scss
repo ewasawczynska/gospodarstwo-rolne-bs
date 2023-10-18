@@ -1,0 +1,48 @@
+header {
+  background-color: white;
+  transition: all 0.4s ease;
+  &.sticky {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 80%);
+    transition: all 0.4s ease;
+  }
+}
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+  &__main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  &__icons {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 10px;
+  }
+  &--highlight {
+    transition-property: color, fill;
+    transition-delay: 50ms;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:active,
+    &:hover {
+      color: $color-dark-background;
+      fill: $color-dark-background;
+    }
+  }
+}

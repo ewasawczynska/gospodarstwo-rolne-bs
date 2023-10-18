@@ -1,0 +1,31 @@
+.page {
+  padding-top: 40px;
+  &__title {
+    padding-bottom: 10px;
+    &--contact {
+      text-align: center;
+      color: $color-dark-background;
+    }
+    &--icon {
+      padding-left: 10px;
+      fill: $color-dark-background;
+    }
+  }
+  &#contact {
+    padding-bottom: 40px;
+  }
+  &__text {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  &__banner {
+    background-image: url("../images/logo-poziom.jpg");
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: $color-light-background;
+  }
+}

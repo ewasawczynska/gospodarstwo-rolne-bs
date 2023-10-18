@@ -1,0 +1,42 @@
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0px;
+  margin: 0px;
+  color: $color-dark-theme;
+}
+h1,
+h2,
+h3,
+p,
+ul,
+figure,
+input {
+  margin: 0;
+}
+
+input {
+  border: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// img {
+//   display: block;
+//   width: 100%;
+// }
