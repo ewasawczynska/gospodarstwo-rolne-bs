@@ -23,6 +23,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script type="module" src="./js/sticky-header.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/carousel.js" defer></script>
     <script
@@ -34,7 +36,31 @@
   </head>
   <body>
     <header>
-      <div class="container"><div class="nav"></div></div>
+      <div class="container">
+        <div class="nav">
+          <div class="nav__main">
+            <a href="./index.html" class="nav--highlight"
+              ><svg width="32" height="32">
+                <use href="./images/icons.svg#icon-home"></use></svg
+            ></a>
+            <a href="#about-us" class="nav--highlight">o gospodarstwie</a>
+            <a href="#offer" class="nav--highlight">oferta</a>
+            <a href="#contact" class="nav--highlight">kontakt</a>
+          </div>
+          <div class="nav__contact">
+            <a href="mailto:bozena.sawczynska@wp.pl" class="nav--highlight"
+              ><svg class="nav__icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >bozena.sawczynska@wp.pl</a
+            >
+            <a href="tel:+48504033448" class="nav--highlight"
+              ><svg class="nav__icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-phone"></use></svg
+              >504 033 448</a
+            >
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section>
@@ -42,52 +68,71 @@
       </section>
       <section>
         <div class="container">
-          <div class="page" id="about-us"></div>
+          <div class="page" id="about-us">
+            <h2 class="page__title">
+              O GOSPODARSTWIE<svg
+                width="500"
+                height="19"
+                class="page__title--icon"
+              >
+                <use href="./images/icons.svg#icon-line"></use>
+              </svg>
+            </h2>
+            <p class="page__text">
+              Działalność rolniczna w naszej rodzinie jest prowadzona od pokoleń
+              i niesamowicie satysfakcjonujący jest jej ciągły rozwój. Gdy
+              kilkadziesiąt lat temu dziadek uprawiał swoje pola - posiadał
+              zaledwie kilka hektarów, a obecnie nasze uprawy rosną na niemalże
+              100 ha. Główne rośliny uprawne na naszych ziemiach to: rzepak,
+              pszenica, kukurydza i buraki cukrowe. Dysponujemy także
+              nowoczesnym sprzętem i zapleczem, które ułatwiają naszą pracę.
+            </p>
+          </div>
           <div class="wrapper">
             <i id="left" class="fa-solid fa-angle-left"></i>
             <div class="carousel">
               <img
-                src="../images/1.jpg"
+                src="./images/1.jpg"
                 alt="Ciągnik rolniczy Deutz Fahr"
                 draggable="false"
               />
               <img
-                src="../images/2.jpg"
+                src="./images/2.jpg"
                 alt="Kombajn zbożowy New Holland"
                 draggable="false"
               />
               <img
-                src="../images/3.jpg"
+                src="./images/3.jpg"
                 alt="Ciągnik rolniczy Zetor"
                 draggable="false"
               />
               <img
-                src="../images/4.jpg"
+                src="./images/4.jpg"
                 alt="Ciągnik rolniczy Deutz Fahr"
                 draggable="false"
               />
               <img
-                src="../images/5.jpg"
+                src="./images/5.jpg"
                 alt="Kombajn zbożowy New Holland"
                 draggable="false"
               />
               <img
-                src="../images/6.jpg"
+                src="./images/6.jpg"
                 alt="Ciągnik rolniczy Deutz Fahr z zestawem"
                 draggable="false"
               />
               <img
-                src="../images/7.jpg"
+                src="./images/7.jpg"
                 alt="Budynek gospodarczy"
                 draggable="false"
               />
               <img
-                src="../images/8.jpg"
+                src="./images/8.jpg"
                 alt="Budynek gospodarczy"
                 draggable="false"
               />
               <img
-                src="../images/9.jpg"
+                src="./images/9.jpg"
                 alt="Budynek gospodarczy"
                 draggable="false"
               />
@@ -96,16 +141,81 @@
           </div>
         </div>
         <div class="container">
-          <div class="page" id="offer"></div>
+          <div class="page" id="offer">
+            <h2 class="page__title">
+              OFERTA<svg width="500" height="19" class="page__title--icon">
+                <use href="./images/icons.svg#icon-line"></use>
+              </svg>
+            </h2>
+            <p class="page__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, perspiciatis consectetur, veritatis tempore porro
+              molestias harum quae doloremque corporis quisquam eligendi quaerat
+              vel voluptate, quos impedit nemo reprehenderit atque praesentium
+              unde! Magnam odio obcaecati aut doloremque laudantium voluptates,
+              vero commodi atque reprehenderit placeat, temporibus, quidem iste
+              asperiores earum eveniet? Quod tenetur, tempora consequatur soluta
+              illo quae nobis eveniet porro, dicta eaque aut animi id, ea earum
+              laboriosam deleniti nostrum. Cumque ad ratione, architecto
+              asperiores sapiente voluptas recusandae illo temporibus natus
+              debitis voluptatibus quibusdam molestiae qui nisi minus, repellat
+              beatae et suscipit eius. Totam repellat magnam aliquam, dicta iure
+              sed. Ad molestias magni, nam fugit, praesentium ipsam fuga sit,
+              exercitationem iusto dolores recusandae cupiditate culpa rem
+              adipisci? Odio sint, officia rerum qui minus voluptatibus
+              obcaecati numquam ab quis harum, quibusdam delectus magni incidunt
+              quia tenetur hic, iure ducimus non corporis. Officia molestiae
+              assumenda, quas excepturi est dolorem? Ut voluptate, magnam
+              ducimus quas quam in odit nobis, voluptatum doloremque aut
+              suscipit! Inventore animi beatae accusantium numquam vero itaque
+              ipsum non quo aspernatur possimus debitis perferendis quia iusto
+              dignissimos nulla, et hic aut explicabo modi! Eveniet officiis
+              nulla sunt ullam minus nobis beatae soluta dolor? Assumenda
+              blanditiis ipsam ipsum repellat, rem odit laborum!
+            </p>
+          </div>
         </div>
         <div class="container">
-          <div class="page" id="contact"></div>
+          <div class="page" id="contact">
+            <h2 class="page__title--contact">SKONTAKTUJ SIĘ Z NAMI!</h2>
+            <p class="page__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+              praesentium ab a quia fuga in commodi consequatur, quam sapiente
+              laudantium laborum vitae eum neque est perferendis unde! Dolorem
+              aliquam autem nam in, fugiat assumenda error optio molestias
+              illum. Qui inventore molestias, dolorum reiciendis quasi minus!
+              Earum ex vel, dolorum soluta obcaecati velit eaque repudiandae
+              laborum voluptatem repellat odit quisquam accusamus quia quibusdam
+              incidunt quod molestiae ab? Tempora natus quia, iure accusantium
+              saepe nisi repudiandae tenetur, distinctio alias placeat adipisci
+              voluptate vero unde deserunt perspiciatis minus itaque facere
+              libero eum ipsam asperiores. Illum animi doloribus rem debitis
+              architecto quas, quos, eveniet facere, autem nemo eum voluptatibus
+              culpa sed. Magni, hic esse. Deleniti omnis quis expedita eaque
+              iste inventore velit repudiandae, eius odio maiores fugiat ut
+              libero repellat et, assumenda nam dolore consectetur temporibus
+              animi possimus aliquam quibusdam! Totam atque quis quae
+              consequuntur fugiat, doloremque reprehenderit ut officia,
+              provident unde explicabo architecto. Id officiis vero dolore
+              ipsum, corrupti rerum exercitationem quidem veritatis ipsam,
+              excepturi eveniet, corporis aperiam et! Alias provident est
+              nostrum, mollitia amet neque, similique laboriosam accusamus
+              exercitationem ullam tenetur ad ea minus omnis eos at enim cum
+              natus voluptate! Vero molestias aliquid provident eius quis rerum
+              corrupti officia veritatis quos!
+            </p>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
-    <script type="module" src="./js/partials-to-index.js"></script>
-
-    <script type="module" src="./js/sticky-header.js"></script>
+    <footer>
+      <div class="container">
+        <p>Gospodarstwo Rolne Bożena Sawczyńska</p>
+        <address>Kłosów 25<br />57-120 Wiązów<br />woj. dolnośląskie</address>
+        <p>NIP: 914-118-53-19</p>
+        <a href="mailto:bozena.sawczynska@wp.pl">bozena.sawczynska@wp.pl</a>
+        <a href="tel:+48504033448">504 033 448</a>
+      </div>
+    </footer>
   </body>
 </html>
