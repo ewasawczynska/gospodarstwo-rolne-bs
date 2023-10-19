@@ -2,3 +2,25 @@ footer {
   background-color: $color-dark-theme;
   color: $color-dark-background;
 }
+
+.footer {
+  font-size: 14px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  &__icon {
+    fill: $color-dark-background;
+    margin-right: 5px;
+  }
+  &__nip {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-weight: 900;
+  }
+}

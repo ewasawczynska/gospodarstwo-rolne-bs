@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css"
@@ -24,7 +24,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <script type="module" src="./js/sticky-header.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/carousel.js" defer></script>
     <script
@@ -33,6 +32,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script type="module" src="./js/sticky-header.js"></script>
   </head>
   <body>
     <header>
@@ -211,11 +211,23 @@
     </main>
     <footer>
       <div class="container">
-        <p>Gospodarstwo Rolne Bożena Sawczyńska</p>
-        <address>Kłosów 25<br />57-120 Wiązów<br />woj. dolnośląskie</address>
-        <p>NIP: 914-118-53-19</p>
-        <a href="mailto:bozena.sawczynska@wp.pl">bozena.sawczynska@wp.pl</a>
-        <a href="tel:+48504033448">504 033 448</a>
+        <div class="footer">
+          <p class="footer__title">Gospodarstwo Rolne Bożena Sawczyńska</p>
+          <p>Kłosów 25, 57-120 Wiązów<br />woj. dolnośląskie</p>
+          <p class="footer__nip">NIP: 914-118-53-19</p>
+          <div class="footer__contact">
+            <a href="mailto:bozena.sawczynska@wp.pl" class="footer__link"
+              ><svg class="footer__icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >bozena.sawczynska@wp.pl</a
+            >
+            <a href="tel:+48504033448" class="footer__link"
+              ><svg class="footer__icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-phone"></use></svg
+              >504 033 448</a
+            >
+          </div>
+        </div>
       </div>
     </footer>
   </body>

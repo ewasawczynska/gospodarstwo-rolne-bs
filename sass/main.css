@@ -1,10 +1,11 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 .container {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -13,6 +14,7 @@ body {
   margin: 0px;
   color: #262626;
 }
+
 h1,
 h2,
 h3,
@@ -22,37 +24,37 @@ figure,
 input {
   margin: 0;
 }
+
 input {
   border: 0;
 }
+
 ul {
   padding: 0;
   list-style: none;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 .wrapper {
   padding: 0 35px;
   max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 40px;
   position: relative;
+  z-index: 1;
 }
+
 .wrapper i {
   top: 50%;
   height: 46px;
@@ -63,9 +65,8 @@ a {
   line-height: 46px;
   border-radius: 50%;
   background: #ccaf7e;
-  color: #fff;
+  color: white;
   position: absolute;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .wrapper i:first-child {
@@ -75,6 +76,7 @@ a {
 .wrapper i:last-child {
   right: -23px;
 }
+
 .wrapper .carousel {
   font-size: 0px;
   cursor: pointer;
@@ -84,24 +86,27 @@ a {
   padding: 0;
   scroll-behavior: smooth;
 }
+
 .carousel.dragging {
-  cursor: -webkit-grab;
   cursor: grab;
   scroll-behavior: auto;
 }
+
 .carousel.dragging img {
   pointer-events: none;
 }
+
 .carousel img {
   height: 340px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   margin-left: 14px;
   width: 33.3333333333%;
 }
 .carousel img:first-child {
   margin-left: 0px;
 }
+
 @media screen and (max-width: 900px) {
   .carousel img {
     width: 50%;
@@ -113,52 +118,34 @@ a {
   }
 }
 header {
-  background-color: #fff;
-  -webkit-transition: all 0.4s ease;
+  background-color: white;
   transition: all 0.4s ease;
+  z-index: 2;
 }
 header.sticky {
   width: 100%;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
 .nav {
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .nav__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 20px;
 }
 .nav__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 20px;
 }
@@ -168,21 +155,16 @@ header.sticky {
   margin-right: 10px;
 }
 .nav--highlight {
-  -webkit-transition-property: color, fill;
   transition-property: color, fill;
-  -webkit-transition-delay: 50ms;
   transition-delay: 50ms;
-  -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav--highlight:focus,
-.nav--highlight:active,
-.nav--highlight:hover {
+.nav--highlight:focus, .nav--highlight:active, .nav--highlight:hover {
   color: #ccaf7e;
   fill: #ccaf7e;
 }
+
 .page {
   padding-top: 40px;
 }
@@ -214,7 +196,30 @@ header.sticky {
   background-position: 50%;
   background-color: #e5dbcf;
 }
+
 footer {
   background-color: #262626;
   color: #ccaf7e;
-} /*# sourceMappingURL=main.min.css.map */
+}
+
+.footer {
+  font-size: 14px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer__icon {
+  fill: #ccaf7e;
+  margin-right: 5px;
+}
+.footer__nip {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer__title {
+  font-weight: 900;
+}/*# sourceMappingURL=main.css.map */
